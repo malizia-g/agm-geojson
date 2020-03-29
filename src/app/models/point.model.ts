@@ -1,4 +1,4 @@
-interface point {
+class Point {
     lat: number;
     lng: number;
   }

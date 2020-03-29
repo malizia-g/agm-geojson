@@ -1,6 +1,6 @@
-interface marker {
-    lat: number;
-    lng: number;
-    label?: string;
-  }
-  
+export class Marker {
+    constructor(
+        public lat: number,
+        public lng: number,
+        public label?: string) { }
+}
