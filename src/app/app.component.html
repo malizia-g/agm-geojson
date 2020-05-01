@@ -1,10 +1,9 @@
 <h1>Angular Google Maps (AGM) Demo</h1>
-<p><a href="https://angular-maps.com/" target="_blank">Official Website</a></p>
 
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [zoomControl]="true">
 
-  <agm-marker *ngFor="let m of markers; let i = index" 
-    [latitude]="m.lat" [longitude]="m.lng" [label]="m.label"
+  <agm-marker *ngFor="let m of markers" 
+    [latitude]="m.lat" [longitude]="m.lng" [label]="m.label"  [iconUrl]="m.icon"
   >
   </agm-marker>
 
