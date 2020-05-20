@@ -33,4 +33,9 @@
   <button (click)="cambiaFoglio(foglio)"> <!--Passiamo le variabili come parametro --> 
     Cambia
   </button>
+
+  <button (click)="getAllData()"> <!--Passiamo le variabili come parametro --> 
+    Non premere
+  </button>
+  <img *ngIf = "loading" style = 'margin-top:0;' src="../assets/img/wait.gif">
 </form>
